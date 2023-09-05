@@ -9,26 +9,26 @@ export default function Banner() {
           <h1 className="text-xl lg:text-3xl font-bold text-center text-bege-800 mt-2">Arena Carioca</h1>
           <h2 className="text-sm lg:text-sm text-center">Aqui você encontra Esportes de Areia | Gastronomia & Drinks | Shows</h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 justify-items-center">
-            <div className="bg-bege-800 rounded-lg shadow-md p-2 h-44 flex flex-col justify-between items-center">
-              <Image src="/beachtennis.jpg" width={120} height={60} alt="raquete" className="rounded-lg"/>
-              <h2 className="text-lg text-white font-semibold">Beach Tennis</h2>
-              <button className="bg-white text-black px-4 py-1 rounded-lg ">Agende-já</button>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
+            <div className="bg-bege-800 rounded-lg shadow-md p-2 lg:h-44 h-36 flex flex-col justify-between items-center">
+              <Image src="/beachtennis.jpg" width={120} height={60} alt="raquete" className="rounded-lg transition duration-300 ease-in-out hover:scale-105"/>
+              <h2 className="lg:text-lg text-sm text-white font-semibold">Beach Tennis</h2>
+              <button className="bg-white text-black px-4 py-1 text-xs rounded-lg font-semibold ">Agende-já</button>
             </div>
-            <div className="bg-bege-800 rounded-lg shadow-md p-2 h-44 flex flex-col justify-between items-center">
-              <Image src="/voleipraia.jpg" width={120} height={60} alt="raquete" className="rounded-lg"/>
-              <h2 className="text-lg text-white font-semibold">Volêi de Praia</h2>
-              <button className="bg-white text-black px-4 py-1 rounded-lg ">Agende-já</button>
+            <div className="bg-bege-800 rounded-lg shadow-md p-2 lg:h-44 h-36 flex flex-col justify-between items-center">
+              <Image src="/voleipraia.jpg" width={120} height={60} alt="raquete" className="rounded-lg transition duration-300 ease-in-out hover:scale-105"/>
+              <h2 className="lg:text-lg text-sm text-white font-semibold">Volêi de Praia</h2>
+              <button className="bg-white text-black px-4 py-1 text-xs rounded-lg font-semibold">Agende-já</button>
             </div>
-            <div className="bg-bege-800 rounded-lg shadow-md p-2 h-44 flex flex-col justify-between items-center">
-              <Image src="/gastro.jpg" width={120} height={60} alt="raquete" className="rounded-lg"/>
-              <h2 className="text-lg text-white font-semibold">Gastronomia</h2>
-              <button className="bg-white text-black px-4 py-1 rounded-lg ">Cardapio</button>
+            <div className="bg-bege-800 rounded-lg shadow-md p-2 lg:h-44 h-36 flex flex-col justify-between items-center">
+              <Image src="/gastro.jpg" width={120} height={60} alt="raquete" className="rounded-lg transition duration-300 ease-in-out hover:scale-105"/>
+              <h2 className="lg:text-lg text-sm text-white font-semibold">Gastronomia</h2>
+              <button className="bg-white text-black px-4 py-1 text-xs rounded-lg font-semibold">Cardapio</button>
             </div>
-            <div className="bg-bege-800 rounded-lg shadow-md p-2  h-44 flex flex-col justify-between items-center">
-              <Image src="/shows.jpg" width={120} height={60} alt="raquete" className="rounded-lg"/>
-              <h2 className="text-sm text-white font-semibold">Shows e Eventos</h2>
-              <button className="bg-white text-black px-4 py-1 rounded-lg ">Veja mais</button>
+            <div className="bg-bege-800 rounded-lg shadow-md p-2 lg:h-44 h-36 flex flex-col justify-between items-center">
+              <Image src="/shows.jpg" width={120} height={60} alt="raquete" className="rounded-lg transition duration-300 ease-in-out hover:scale-105"/>
+              <h2 className="lg:text-base text-xs text-white font-semibold">Shows e Eventos</h2>
+              <button className="bg-white text-black  px-4 py-1 text-xs rounded-lg font-semibold">Veja mais</button>
             </div>
             
           </div>  
