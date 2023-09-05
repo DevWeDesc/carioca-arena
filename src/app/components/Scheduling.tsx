@@ -5,7 +5,7 @@ export default function Scheduling() {
   return (
     <div className="bg-bege-200 h-full p-4">
       <h2 className="text-2xl text-center text-black font-bold">Como realizar o agendamento:</h2>
-      <div className="flex flex-col items-center lg:items-start gap-12 lg:flex-row lg:w-3/5 lg:mx-auto my-12">
+      <div className="flex flex-col items-center lg:items-start gap-12 lg:flex-row lg:w-3/5 lg:mx-auto mt-12">
         <div className='w-8/12 flex flex-col items-center justify-center gap-4 p-4'>
           <HiOutlineLocationMarker className="text-6xl text-bege-800" />
           <p className="text-black font-bold">Unidade Arena Carioca</p>
