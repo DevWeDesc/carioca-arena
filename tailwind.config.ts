@@ -16,6 +16,8 @@ const config: Config = {
       colors: {
         'bege-800': '#897B71',
         'bege-200': '#A59C95',
+        'bege-100': '#d2cdca',
+        'whatsapp': '#00A500',
       },
       fontSize:{
         'small': '0.7rem',

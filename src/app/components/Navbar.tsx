@@ -5,6 +5,15 @@ export default function Navbar() {
  const [isTrue, setIsTrue] = useState(true)
  const [isMenuClicked, setIsMenuClicked] = useState(false)
 
+
+ function disablescroll() {
+  if(isMenuClicked){
+    document.body.style.overflow = 'unset';
+  }else {
+    document.body.style.overflow = 'hidden';
+  }
+}
+
  useEffect(() => {
 
   async function checkIsMobile() {
@@ -27,9 +36,9 @@ export default function Navbar() {
       {
         isTrue ?
         <>        
-        <nav className="h-14 bg-white w-full drop-shadow-lg flex items-center justify-center">
+        <nav className="h-14 bg-white w-full drop-shadow-lg flex items-center justify-end pr-2">
           <div className="border p-2 flex ">
-            <div className="burger-menu h-6 flex flex-col items-start justify-between cursor-pointer" onClick={ ()=> setIsMenuClicked(!isMenuClicked)} >
+            <div className="burger-menu h-6 flex flex-col items-start justify-between cursor-pointer" onClick={ ()=> { setIsMenuClicked(!isMenuClicked); disablescroll() } } >
               <div className={`burger-bar w-6 h-0.5 rounded bg-gray-800 transform $  {isMenuClicked ? "rotate-45 translate-x-0 translate-y-[9px]" : ""}`}></div>
               <div className={`burger-bar w-6 h-0.5 rounded bg-gray-800 transform $  {isMenuClicked ? "-rotate-45 -translate-x-0 -translate-y-[2px]" : ""}`}></div>
               <div className={`burger-bar w-6 h-0.5 rounded bg-gray-800 transform $  {isMenuClicked ? "scale-0" : ""}`}></div>

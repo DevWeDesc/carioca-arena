@@ -17,7 +17,7 @@ export default function Banner() {
             </div>
             <div className="bg-bege-800 rounded-lg shadow-md p-2 lg:h-44 h-36 flex flex-col justify-between items-center">
               <Image src="/voleipraia.jpg" width={120} height={60} alt="raquete" className="rounded-lg transition duration-300 ease-in-out hover:scale-105"/>
-              <h2 className="lg:text-lg text-sm text-white font-semibold">Volêi de Praia</h2>
+              <h2 className="lg:text-lg text-sm text-white font-semibold">Vôlei de Praia</h2>
               <button className="bg-white text-black px-4 py-1 text-xs rounded-lg font-semibold">Agende-já</button>
             </div>
             <div className="bg-bege-800 rounded-lg shadow-md p-2 lg:h-44 h-36 flex flex-col justify-between items-center">
