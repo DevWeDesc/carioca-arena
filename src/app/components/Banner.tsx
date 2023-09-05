@@ -3,8 +3,8 @@ import Image from 'next/image'
 export default function Banner() {
   return (
     <>  
-    <div className="bg-[url('/banner.jpg')] h-24 bg-cover bg-center border-b" /> 
-      <div className="h-full bg-white mx-auto w-3/5 lg:w-2/5 rounded-lg mt-[-25px] mb-12 flex flex-col gap-4">
+    <div className="bg-[url('/banner.jpg')] h-24 lg:h-64 bg-cover bg-center border-b" /> 
+      <div className="h-full bg-white mx-auto w-3/5 lg:w-2/5 rounded-2xl mt-[-25px] mb-12 flex flex-col gap-4">
 
           <h1 className="text-xl lg:text-3xl font-bold text-center text-bege-800 mt-2">Arena Carioca</h1>
           <h2 className="text-sm lg:text-sm text-center">Aqui você encontra Esportes de Areia | Gastronomia & Drinks | Shows</h2>
