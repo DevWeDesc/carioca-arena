@@ -3,37 +3,36 @@ import Image from 'next/image'
 export default function Banner() {
   return (
     <>  
-    <div className="bg-[url('/banner.jpg')] h-24 lg:h-80 bg-cover bg-center border-b"> 
-      <div className="h-20 bg-white mx-auto w-3/5 absolute inset-x-0 mt-[4.5rem] rounded-lg z-10 lg:w-2/5 lg:mt-[17rem]">
-        <div className="flex flex-col justify-center items-center h-80 lg:h-52  gap-2 lg:gap-4 m-2">
-          <h1 className="text-sm lg:text-3xl font-bold text-center text-bege-800">Arena Carioca</h1>
-          <h2 className="text-xs lg:text-sm text-center">Aqui você encontra Esportes de Areia | Gastronomia & Drinks | Shows</h2>
+    <div className="bg-[url('/banner.jpg')] h-24 bg-cover bg-center border-b" /> 
+      <div className="h-full bg-white mx-auto w-3/5 lg:w-2/5 rounded-lg mt-[-25px] mb-12 flex flex-col gap-4">
 
-          <div className="flex flex-wrap gap-2 lg:gap-4 h-80 content-center justify-center">
-            <div className="bg-bege-800 w-28 h-28 rounded-lg p-2 gap-1 flex flex-col items-center justify-center">
-              <span className="text-xs font-bold text-white">Beach Tennis</span>
-              <Image src="/beachtennis.jpg" width={80} height={80} alt="raquete" className="pb-1"/>
-              <button className="bg-white text-black px-2 text-xs font-semibold rounded-full uppercase">Agende-já</button>
+          <h1 className="text-xl lg:text-3xl font-bold text-center text-bege-800 mt-2">Arena Carioca</h1>
+          <h2 className="text-sm lg:text-sm text-center">Aqui você encontra Esportes de Areia | Gastronomia & Drinks | Shows</h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 justify-items-center">
+            <div className="bg-bege-800 rounded-lg shadow-md p-2 h-44 flex flex-col justify-between items-center">
+              <Image src="/beachtennis.jpg" width={120} height={60} alt="raquete" className="rounded-lg"/>
+              <h2 className="text-lg text-white font-semibold">Beach Tennis</h2>
+              <button className="bg-white text-black px-4 py-1 rounded-lg ">Agende-já</button>
             </div>
-            <div className="bg-bege-800 w-28 h-28 rounded-lg p-2 gap-1 flex flex-col items-center justify-center">
-              <span className="text-xs font-bold text-white">Volêi de Praia</span>
-              <Image src="/voleipraia.jpg" width={80} height={80} alt="raquete" className="pb-1"/>
-              <button className="bg-white text-black px-2 text-xs font-semibold rounded-full uppercase">Agende-já</button>
+            <div className="bg-bege-800 rounded-lg shadow-md p-2 h-44 flex flex-col justify-between items-center">
+              <Image src="/voleipraia.jpg" width={120} height={60} alt="raquete" className="rounded-lg"/>
+              <h2 className="text-lg text-white font-semibold">Volêi de Praia</h2>
+              <button className="bg-white text-black px-4 py-1 rounded-lg ">Agende-já</button>
             </div>
-            <div className="bg-bege-800 w-28 h-28 rounded-lg p-2 gap-1 flex flex-col items-center justify-center">
-              <span className="text-xs font-bold text-white">Gastronomia</span>
-              <Image src="/gastro.jpg" width={80} height={80} alt="raquete" className="pb-1"/>
-              <button className="bg-white text-black px-2 text-xs font-semibold rounded-full uppercase">Cardapio</button>
+            <div className="bg-bege-800 rounded-lg shadow-md p-2 h-44 flex flex-col justify-between items-center">
+              <Image src="/gastro.jpg" width={120} height={60} alt="raquete" className="rounded-lg"/>
+              <h2 className="text-lg text-white font-semibold">Gastronomia</h2>
+              <button className="bg-white text-black px-4 py-1 rounded-lg ">Cardapio</button>
             </div>
-            <div className="bg-bege-800 w-28 h-28 rounded-lg p-2 gap-1 flex flex-col items-center justify-center">
-              <span className="text-small font-bold text-white">Shows e Eventos</span>
-              <Image src="/shows.jpg" width={80} height={80} alt="raquete" className="pb-1"/>
-              <button className="bg-white text-black px-2 text-xs font-semibold rounded-full uppercase">Veja mais</button>
+            <div className="bg-bege-800 rounded-lg shadow-md p-2  h-44 flex flex-col justify-between items-center">
+              <Image src="/shows.jpg" width={120} height={60} alt="raquete" className="rounded-lg"/>
+              <h2 className="text-sm text-white font-semibold">Shows e Eventos</h2>
+              <button className="bg-white text-black px-4 py-1 rounded-lg ">Veja mais</button>
             </div>
+            
           </div>  
         </div>
-      </div>
-      </div>
     </>
   )
 }
