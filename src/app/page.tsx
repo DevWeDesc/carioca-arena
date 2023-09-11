@@ -3,6 +3,8 @@ import Banner from "@/app/components/Banner"
 import Scheduling from "@/app/components/Scheduling"
 import Plans from "@/app/components/Plans"
 import Image from "next/image"
+import BannerImagens from "@/app/components/BannerImagens"
+import AccordionFAQ from "@/app/components/AccordionFAQ"
 
 export default function Home() {
   return (
@@ -11,7 +13,6 @@ export default function Home() {
       <Banner/>
       <Scheduling/>
       <Plans/>
-
       <div className="bg-black flex flex-col md:flex-row items-center justify-center">
         <div className="w-full md:w-1/2 h-1/2 relative flex items-center justify-center">
           <img src="/beach.jpg" alt="beach tenis" className="opacity-30 hover:opacity-20 h-72 md:h-96 w-full" />
@@ -32,6 +33,12 @@ export default function Home() {
           <h4 className="text-4xl font-bold text-center">CARDÁPIO</h4>
           </div>
         </div>
+      </div>
+      <BannerImagens />
+      <AccordionFAQ />
+      
+      <div className="h-80 bg-black">
+
       </div>
     </main>
   )

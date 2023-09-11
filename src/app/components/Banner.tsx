@@ -11,22 +11,22 @@ export default function Banner() {
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
             <div className="bg-bege-800 rounded-lg shadow-md p-2 lg:h-56 h-36 flex flex-col justify-between items-center">
-              <Image src="/beachtennis.jpg" width={200} height={60} alt="raquete" className="rounded-lg transition duration-300 ease-in-out hover:scale-105"/>
+              <Image src="/beachtennis.jpg" width={200} height={60} alt="raquete" className="h-36 rounded-lg transition duration-300 ease-in-out hover:scale-105"/>
               <h2 className="lg:text-lg text-sm text-white font-semibold">Beach Tennis</h2>
               <button className="bg-white text-black px-4 py-1 text-xs rounded-lg font-semibold ">Agende-já</button>
             </div>
             <div className="bg-bege-800 rounded-lg shadow-md p-2 lg:h-56 h-36 flex flex-col justify-between items-center">
-              <Image src="/voleipraia.jpg" width={200} height={60} alt="raquete" className="rounded-lg transition duration-300 ease-in-out hover:scale-105"/>
+              <Image src="/voleipraia.jpg" width={200} height={60} alt="raquete" className=" h-36 rounded-lg transition duration-300 ease-in-out hover:scale-105"/>
               <h2 className="lg:text-lg text-sm text-white font-semibold">Vôlei de Praia</h2>
               <button className="bg-white text-black px-4 py-1 text-xs rounded-lg font-semibold">Agende-já</button>
             </div>
             <div className="bg-bege-800 rounded-lg shadow-md p-2 lg:h-56 h-36 flex flex-col justify-between items-center">
-              <Image src="/gastro.jpg" width={200} height={60} alt="raquete" className="rounded-lg transition duration-300 ease-in-out hover:scale-105"/>
+              <Image src="/gastro.jpg" width={200} height={60} alt="raquete" className=" h-36 rounded-lg transition duration-300 ease-in-out hover:scale-105"/>
               <h2 className="lg:text-lg text-sm text-white font-semibold">Gastronomia</h2>
               <button className="bg-white text-black px-4 py-1 text-xs rounded-lg font-semibold">Cardapio</button>
             </div>
             <div className="bg-bege-800 rounded-lg shadow-md p-2 lg:h-56 h-36 flex flex-col justify-between items-center">
-              <Image src="/shows.jpg" width={200} height={60} alt="raquete" className="rounded-lg transition duration-300 ease-in-out hover:scale-105"/>
+              <Image src="/shows.jpg" width={200} height={60} alt="raquete" className="h-36 rounded-lg transition duration-300 ease-in-out hover:scale-105"/>
               <h2 className="lg:text-base text-xs text-white font-semibold">Shows e Eventos</h2>
               <button className="bg-white text-black  px-4 py-1 text-xs rounded-lg font-semibold">Veja mais</button>
             </div>
