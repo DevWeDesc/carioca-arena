@@ -11,7 +11,7 @@ export default function AccordionFAQ() {
 
   return (
     <>
-    <div className='w-1/2 mx-auto h-96'>
+    <div className='w-1/2 mx-auto h-96' id='faq'>
       <h2 className="text-2xl text-center text-bege-800 font-bold my-4">FAQ - PERGUNTAS FREQUENTES</h2>
       <div className="mb-4">
         <div className='flex items-center border-b'>

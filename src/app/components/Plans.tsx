@@ -1,7 +1,7 @@
 import { FaCheck } from 'react-icons/fa'
 export default function Plans() {
   return (
-    <div className="h-full p-4 mb-10">
+    <div className="h-full p-4 mb-10" id='planos'>
       <h2 className="text-2xl text-center text-bege-800 font-bold mb-4">Aluguel de Quadra</h2>
       <div className="bg-white w-2/3 mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 lg:px-8">
 

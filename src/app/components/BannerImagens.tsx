@@ -10,7 +10,7 @@ import 'swiper/css/navigation';
 
 export default function BannerImagens() {
   return (
-    <div className="py-10 bg-[url('/bannerclear.jpg')] bg-cover bg-center">
+    <div className="py-10 bg-[url('/bannerclear.jpg')] bg-cover bg-center" id='shows'>
       <div className='bg-black p-10 w-3/5 mx-auto'>
 
       <Swiper
