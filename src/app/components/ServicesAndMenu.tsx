@@ -16,12 +16,15 @@ export default function ServicesAndMenu() {
             </ul>
           </div>
         </div>
-        <div className="w-full md:w-1/2 h-1/2 relative flex items-center justify-center">
+        <a href="/CardapioArenaCarioca.pdf" target='_blank' className="w-full md:w-1/2 h-1/2 relative flex items-center justify-center">
+        {/* <div className="w-full md:w-1/2 h-1/2 relative flex items-center justify-center"> */}
           <img src="/gastro.jpg" alt="hamburguer" className="opacity-50 hover:opacity-30 h-72 md:h-96 w-full" />
           <div className="absolute bg-opacity-70 text-white p-2">
           <h4 className="text-4xl font-bold text-center">CARDÁPIO</h4>
+          <h5 className='text-center'>Ver cardápio</h5>
           </div>
-        </div>
+        {/* </div> */}
+        </a>
       </div>
   )
 }

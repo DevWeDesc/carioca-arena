@@ -19,7 +19,10 @@ export default function Plans() {
           </div>
           <div className='flex flex-col items-center justify-center gap-4'>
             <p className="text-center font-semibold">Ver dias e horarios disponiveis</p>
+            <a href="https://api.whatsapp.com/send?phone=5511933407606&text=Olá, tenho interesse em realizar o agendamento da quadra" target="_blank" rel="noopener noreferrer">
+
             <button className="py-4 px-2 bg-whatsapp text-white font-bold rounded-lg border">Entrar em contato </button>
+            </a>
           </div>
         </div>
         

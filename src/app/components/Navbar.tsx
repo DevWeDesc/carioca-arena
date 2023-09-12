@@ -1,34 +1,14 @@
 'use client'
-import React, { useEffect, useState } from "react"
 
-export default function Navbar() {
- const [isTrue, setIsTrue] = useState(true)
- const [isMenuClicked, setIsMenuClicked] = useState(false)
-
-
- function disablescroll() {
-  if(isMenuClicked){
-    document.body.style.overflow = 'unset';
-  }else {
-    document.body.style.overflow = 'hidden';
+export default function Navbar({ isTrue, isMenuClicked, setIsMenuClicked}: any) {
+  
+  function disablescroll() {
+    if(isMenuClicked){
+      document.body.style.overflow = 'unset';
+    }else {
+      document.body.style.overflow = 'hidden';
+    }
   }
-}
-
- useEffect(() => {
-
-  async function checkIsMobile() {
-    setIsTrue(window.innerWidth <= 768); 
-  }
-
-  window.addEventListener("resize", checkIsMobile);
-
-  checkIsMobile();
-
-  return () => {
-    window.removeEventListener("resize", checkIsMobile);
-  };
-}, []);
-
   return (
     <nav>
       <div className="bg-[url('/fundo-bg.jpg')] h-32 bg-cover bg-center lg:h-60" />
@@ -47,27 +27,25 @@ export default function Navbar() {
         </nav>
         <div className={`menu w-screen left-0 h-full bg-black opacity-90 z-40 fixed top-3 drop-shadow-md ${isMenuClicked ? "mt-[10.6rem]" : "hidden"} `}>
           <div className="h-[74%] flex flex-col items-center justify-center gap-6 text-white text-sm font-semibold uppercase ">
-            <a className="hover:text-bege-200 cursor-pointer w-1/2 text-center hover:border-b " href="/" >Inicio</a>
-            <a className="hover:text-bege-200 cursor-pointer w-1/2 text-center hover:border-b" href="#planos" >Locação de Quadras</a>
-            <a className="hover:text-bege-200 cursor-pointer w-1/2 text-center hover:border-b" href="#servicos" >Serviços</a>
-            <a className="hover:text-bege-200 cursor-pointer w-1/2 text-center hover:border-b" href="#servicos" >Cardapio</a>
-            <a className="hover:text-bege-200 cursor-pointer w-1/2 text-center hover:border-b" href="#shows" >Shows e Eventos</a>
-            <a className="hover:text-bege-200 cursor-pointer w-1/2 text-center hover:border-b" href="https://api.whatsapp.com/send?phone=5511933407606" target="_blank">Contato</a>
+            <a className="hover:text-bege-200 cursor-pointer w-1/2 text-center hover:border-b" onClick={ ()=> { setIsMenuClicked(!isMenuClicked); disablescroll() } } href="/" >Inicio</a>
+            <a className="hover:text-bege-200 cursor-pointer w-1/2 text-center hover:border-b" onClick={ ()=> { setIsMenuClicked(!isMenuClicked); disablescroll() } } href="#planos" >Locação de Quadras</a>
+            <a className="hover:text-bege-200 cursor-pointer w-1/2 text-center hover:border-b" onClick={ ()=> { setIsMenuClicked(!isMenuClicked); disablescroll() } } href="#servicos" >Serviços</a>
+            <a className="hover:text-bege-200 cursor-pointer w-1/2 text-center hover:border-b" onClick={ ()=> { setIsMenuClicked(!isMenuClicked); disablescroll() } } href="#servicos" >Cardapio</a>
+            <a className="hover:text-bege-200 cursor-pointer w-1/2 text-center hover:border-b" onClick={ ()=> { setIsMenuClicked(!isMenuClicked); disablescroll() } } href="#shows" >Shows e Eventos</a>
+            <a className="hover:text-bege-200 cursor-pointer w-1/2 text-center hover:border-b" onClick={ ()=> { setIsMenuClicked(!isMenuClicked); disablescroll() } } href="https://api.whatsapp.com/send?phone=5511933407606" target="_blank">Contato</a>
           </div>
         </div>
       </> 
       :
-        <div className="flex items-center justify-center gap-10  text-sm lg:text-lg font-semibold p-4 drop-shadow-lg border-b uppercase">
-          <a className="hover:text-color-yellow-custom cursor-pointer" href="/" >Inicio</a>
-          <a className="hover:text-color-yellow-custom cursor-pointer" href="#planos" >Locação de Quadras</a>
-          <a className="hover:text-color-yellow-custom cursor-pointer" href="#servicos" >Serviços</a>
-          <a className="hover:text-color-yellow-custom cursor-pointer" href="#servicos" >Cardapio</a>
-          <a className="hover:text-color-yellow-custom cursor-pointer" href="#shows" >Shows e Eventos</a>
-          <a className="hover:text-color-yellow-custom cursor-pointer" href="https://api.whatsapp.com/send?phone=5511933407606" target="_blank"  >Contato</a>
+        <div className="flex justify-between gap-10 lg:w-3/5 text-sm lg:text-lg lg:mx-auto font-bold py-4 border-b uppercase h-14">
+          <a className="hover:text-bege-800 cursor-pointer" href="/" >Inicio</a>
+          <a className="hover:text-bege-800 cursor-pointer" href="#planos" >Locação de Quadras</a>
+          <a className="hover:text-bege-800 cursor-pointer" href="#servicos" >Serviços</a>
+          <a className="hover:text-bege-800 cursor-pointer" href="#servicos" >Cardápio</a>
+          <a className="hover:text-bege-800 cursor-pointer" href="#shows" >Shows e Eventos</a>
+          <a className="hover:text-bege-800 cursor-pointer" href="https://api.whatsapp.com/send?phone=5511933407606&text=Olá, tenho interesse em realizar o agendamento da quadra" target="_blank"  >Contato</a>
         </div>
       }
-
-        
     </nav>
   )
 }
